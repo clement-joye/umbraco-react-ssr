@@ -1,0 +1,18 @@
+@addTagHelper "*, Microsoft.AspNetCore.Mvc.TagHelpers"
+@{
+    Layout = null;
+}
+@await Html.PartialAsync("_ViewImports")
+<!DOCTYPE html>
+<html lang="en">
+    @await Html.PartialAsync("_Head")
+    <body>
+        <noscript>You need to enable JavaScript to run this app.</noscript>
+        <div id="root" asp-prerender-module="App" asp-prerender-data="@Model"> <!-- TagHelper is taking the model as input -->
+            <script>
+                window.data = @Html.Raw(Json.Serialize(Model));
+            </script>
+        </div>
+        @RenderBody()
+    </body>
+</html>

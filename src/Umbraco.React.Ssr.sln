@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32602.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Umbraco.React.Ssr.Web", "Umbraco.React.Ssr.Web\Umbraco.React.Ssr.Web.csproj", "{C41DDBEE-7B21-4134-837F-191908BE4433}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Umbraco.React.Ssr.Application", "Umbraco.React.Ssr.Application\Umbraco.React.Ssr.Application.csproj", "{BD1EB123-7E5D-48F8-B558-8B434670484D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Umbraco.React.Ssr.Domain", "Umbraco.React.Ssr.Domain\Umbraco.React.Ssr.Domain.csproj", "{F9F24874-A271-4D7E-9001-83D280CA99A7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Umbraco.React.Ssr.Prerendering", "Umbraco.React.Ssr.Prerendering\Umbraco.React.Ssr.Prerendering.csproj", "{FAF4EE5F-9609-4526-908A-2A354CC3FC40}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C41DDBEE-7B21-4134-837F-191908BE4433}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C41DDBEE-7B21-4134-837F-191908BE4433}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C41DDBEE-7B21-4134-837F-191908BE4433}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C41DDBEE-7B21-4134-837F-191908BE4433}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD1EB123-7E5D-48F8-B558-8B434670484D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD1EB123-7E5D-48F8-B558-8B434670484D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD1EB123-7E5D-48F8-B558-8B434670484D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD1EB123-7E5D-48F8-B558-8B434670484D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9F24874-A271-4D7E-9001-83D280CA99A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9F24874-A271-4D7E-9001-83D280CA99A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9F24874-A271-4D7E-9001-83D280CA99A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9F24874-A271-4D7E-9001-83D280CA99A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAF4EE5F-9609-4526-908A-2A354CC3FC40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAF4EE5F-9609-4526-908A-2A354CC3FC40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAF4EE5F-9609-4526-908A-2A354CC3FC40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAF4EE5F-9609-4526-908A-2A354CC3FC40}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7E5338B5-CC7A-4910-8023-6DE909E17ED1}
+	EndGlobalSection
+EndGlobal

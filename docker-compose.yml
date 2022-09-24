@@ -1,0 +1,39 @@
+---
+version: '3.8'
+
+services:
+  webapp:
+    # image: <container_registry>/umbraco-web:latest
+    image: umbraco-web:latest
+    container_name: webapp
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "7000:80"
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      SsrEndpoint: http://express-ssr:3000
+    restart: always
+    volumes:
+      - ./src/Umbraco.React.Ssr.Web/umbraco/Data:/app/umbraco/Data
+      - ./src/Umbraco.React.Ssr.Web/wwwroot:/app/wwwroot
+      - ./src/Umbraco.React.Ssr.Web/Views:/app/Views
+    networks:
+      - umbraco-react-ssr-network
+    depends_on:
+      - express-ssr
+
+  express-ssr:
+    # image: <container_registry>/express-ssr:latest
+    image: express-ssr:latest
+    container_name: ssr
+    restart: always
+    build:
+      context: ./src/Umbraco.React.Ssr.FrontEnd
+      dockerfile: Dockerfile
+    networks:
+      - umbraco-react-ssr-network
+networks:
+  umbraco-react-ssr-network:
+    name: umbraco-react-ssr-network
