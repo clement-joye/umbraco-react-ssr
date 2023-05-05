@@ -35,21 +35,6 @@
     <PackageReference Include="uSync" Version="10.1.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Features\NavigationItems\Models\" />
-    <Folder Include="Features\Page\Queries\" />
-    <Folder Include="Infrastructure\Common\" />
-    <Folder Include="Infrastructure\Persistence\" />
-    <Folder Include="Infrastructure\Services\" />
-    <Folder Include="Views\MacroPartials\" />
-    <Folder Include="Views\Shared\Components\" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Include="umbraco\Data\Umbraco.sqlite.db">
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Umbraco.React.Ssr.Application\Umbraco.React.Ssr.Application.csproj" />
